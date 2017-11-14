@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Educación</title>
+  </head>
+  <body>
+    <header>
+      <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+       <g>
+        <title>Layer 1</title>
+        <path stroke="#000000" id="svg_1" d="m24.752041,15.55841c-0.60286,2.496039 -34.362999,-4.203856 1.808579,-2.62741c36.171578,1.576446 -1.808579,2.62741 -1.808579,2.62741z" fill="#6ba6e0"/>
+        <text stroke="#000000" transform="matrix(0.4157105742652124,0,0,0.3663678691354499,6.517347959242283,15.016001860744142) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_2" y="30.152137" x="43.430886" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">JCVH</text>
+        <rect stroke="#000000" id="svg_3" height="3.375" width="38.390623" y="27.812504" x="5.937523" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" fill="#6cb2f7"/>
+       </g>
+      </svg>
+      <h1>Hoja de Vida</h1>
+    </header>
+    <h2>Datos Personales</h2>
+    <h3><b>Nombre: </b>Juan Camilo Villamizar Herrera</h3>
+    <h3><b>Fecha de nacimiento: </b>19 de Julio de 1987</h3>
+    <h3><b>Lugar de Nacimiento: </b>Bogotá</h3>
+
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="educacion.html">Educación</a></li>
+      <li><a href="experiencia.html">Experiencia</a></li>
+    </ul>
+    <h2>Educación</h2>
+
+    <table border="1" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>¿Culminó?</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>2004</td>
+        <td>Colegio Billingue Pio XII</td>
+        <td>Bogotá</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2012</td>
+        <td>Universidad Central</td>
+        <td>Bogotá</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2017</td>
+        <td>Next University</td>
+        <td>Bogotá</td>
+        <td>No</td>
+      </tr>
+      </tbody>
+
+    </table>
+    <h2><b>Agregar Estudios</b></h2>
+    <form class="" action="educacion.html" method="post">
+      <fieldset>
+        <p>
+          <label for="anio"><b>Año</b>:</label>
+          <select class="" name="" id="anio">
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+          </select>
+        </p>
+        <p>
+          <label for="institucion"><b>Institución:</b></label>
+          <input id="institucion" type="text" autofocus name="" placeholder="Digite la institución donde estudió" size="83px" required>
+        </p>
+        <p>
+          <label for="lugar"><b>Lugar: </b></label> <textarea id="lugar" name="lugar" rows="2" cols="80"></textarea>
+        </p>
+        <p>
+          <label for="radio"><b>¿Culminó?</b></label>
+          <input id="radio" type="radio" name="culmino" value="1" checked>Si
+          <input id="radio" type="radio" name="culmino" value="0">No<br>
+        </p>
+        <p>
+          <input type="submit" value="Enviar">
+        </p>
+      </fieldset>
+      <footer>
+        <ul>
+          <li><b>Correo Electrónico: </b>jcvillamizarh@gmail.com</li>
+          <li><b>Teléfono: </b>456789</li>
+          <li><b>Dirección: </b>Bogotá - Colombia</li>
+        </ul>
+        <p>@Derechos reservados página creada por Juan Camilo Villamizar</p>
+      </footer>
+    </form>
+  </body>
+</html>
