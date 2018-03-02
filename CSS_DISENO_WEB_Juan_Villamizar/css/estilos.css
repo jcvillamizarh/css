@@ -1,0 +1,420 @@
+body{
+	background-color: #02010a;
+	font-family: Dancing Script;
+	animation: arriba 2s;
+}
+@keyframes arriba {
+  0% {
+		position: relative;
+    top: 760px;
+  }
+  100% {
+		position: relative;
+    top: 0px;
+  }
+}
+@media  (max-width:1920px) and (min-width:1080px) {
+
+.contenido{
+	width: 900px;
+	margin: 0 auto;
+}
+
+header{
+	background-color: #5b7989;
+	border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+	display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+header h1{
+	padding-left: 10px;
+	text-align: left;
+	text-shadow: 2px 2px #02010a;
+	color:white;
+	padding: 20px;
+	width: 50%;
+	float: left;
+}
+
+navbar{
+	text-align: right;
+	width: 50%;
+	float: right;
+	padding:50px;
+}
+navbar a{
+	color: white;
+}
+.activo{
+	text-decoration: none;
+}
+
+img{
+  box-shadow:1px 1px 2px  #02010a;
+}
+.imagen_principal{
+	background-color: #82c3a6;
+	padding: 10px;
+	text-align: center;
+}
+
+.imagen_secundaria{
+	background-color: #d5c75f;
+	display: flex;
+	padding: 10px 0;
+	width: 100%;
+}
+#imagen1{
+  height: auto;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+	width: 50%;
+}
+#imagen2{
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+	width: 50%;
+}
+#imagenUno{
+border: 1px;
+  box-shadow: 1px 1px 2px #82c3a6;
+  height: 90%;
+}
+#imagenUno:hover{
+  animation: rotacion 2s;
+}
+@-webkit-keyframes rotacion {
+	from{
+	  transform: rotate(5deg);
+	}
+	to{
+	  height: 300px;
+	}
+}
+
+#imagenDos{
+	border:1px;
+	box-shadow: 1px 1px 2px #82c3a6;
+}
+
+#imagenDos:hover{
+	animation: imagen2-animacion 2s;
+}
+
+@keyframes imagen2-animacion {
+  0% {
+    position: relative;
+    top: 5px;
+  }
+  50% {
+    position: relative;
+    left: 5px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+  }
+}
+
+footer{
+	background-color: #C6D5C5;
+	color: black;
+	width: 100%;
+	border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+}
+footer h3{
+  text-align: center;
+  margin: 0;
+  padding-left: 20px;
+}
+.contacto{
+  width: 25%;
+}
+.termino{
+  width: 25%;
+}
+.redes{
+  width: 25%;
+}
+.derecho{
+  width: 25%;
+}
+
+}
+
+/*media querie tamanio 900*/
+@media  (max-width:1000px) and (min-width:421px) {
+	.contenido{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	header{
+		background-color: #5b7989;
+		border-top-left-radius: 10px;
+	  border-top-right-radius: 10px;
+		display: flex;
+	  flex-direction: column;
+	  overflow: hidden;
+	}
+
+	header h1{
+		width: 100%;
+    text-align: center;
+		color: white;
+	}
+
+	navbar{
+		width: 100%;
+    display: block;
+    overflow: hidden;
+    float: initial;
+    text-align: center;
+	}
+	navbar a{
+		color: white;
+	}
+	.activo{
+		text-decoration: none;
+	}
+
+	.imagen_principal{
+		background-color: #82c3a6;
+		padding: 10px;
+		text-align: center;
+		width: auto;
+	}
+
+	.imagen_secundaria{
+		background-color: #d5c75f;
+		display: flex;
+		padding: 10px 0;
+		width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+	}
+	#imagen1{
+	  height: auto;
+	  width: 100%;
+	  text-align: center;
+	  overflow: hidden;
+		width: 50%;
+	}
+	#imagen2{
+	  height: auto;
+	  overflow: hidden;
+	  text-align: center;
+		width: 50%;
+	}
+	#imagenUno{
+	border: 1px;
+	  box-shadow: 1px 1px 2px #82c3a6;
+	  height: 90%;
+	}
+	#imagenUno:hover{
+	  animation: rotacion 2s;
+	}
+	@-webkit-keyframes rotacion {
+		from{
+		  transform: rotate(5deg);
+		}
+		to{
+		  height: 300px;
+		}
+	}
+
+	#imagenDos{
+		border:1px;
+		box-shadow: 1px 1px 2px #82c3a6;
+	}
+
+	#imagenDos:hover{
+		animation: imagen2-animacion 2s;
+	}
+
+	@keyframes imagen2-animacion {
+	  0% {
+	    position: relative;
+	    top: 5px;
+	  }
+	  50% {
+	    position: relative;
+	    left: 5px;
+	  }
+	  100% {
+	    position: relative;
+	    left: 0px;
+	  }
+	}
+
+	footer{
+		background-color: #C6D5C5;
+		color: black;
+		width: 100%;
+		border-bottom-left-radius: 10px;
+	  border-bottom-right-radius: 10px;
+		display: flex;
+    flex-direction:column;
+	}
+	footer h3{
+	  text-align: center;
+	  margin: 0;
+	  padding-left: 20px;
+	}
+	.contacto{
+	  width: 100%;
+	}
+	.termino{
+	  width: 100%;
+	}
+	.redes{
+	  width: 100%;
+	}
+	.derecho{
+	  width: 100%;
+	}
+}
+
+/*tamanio para movil*/
+@media (max-width:420px) {
+	.contenido{
+		width: 100%;
+	}
+
+	header{
+		background-color: #5b7989;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	header h1{
+		padding-left: 10px;
+		text-align: left;
+		text-shadow: 2px 2px #02010a;
+		color:white;
+		padding: 20px;
+		
+	}
+
+	navbar{
+		text-align: center;
+		display: block;
+		float: initial;
+		padding:50px;
+	}
+	navbar a{
+		color: white;
+	}
+	.activo{
+		text-decoration: none;
+	}
+
+	.imagen_principal{
+		background-color: #82c3a6;
+		padding: 10px;
+		text-align: center;
+	}
+	.imagen_principal img{
+		width: 100%;
+	}
+
+	.imagen_secundaria{
+		background-color: #d5c75f;
+		display: flex;
+		padding: 10px 0;
+		width: 100%;
+		flex-direction: column;
+		overflow: hidden;
+	}
+	#imagen1{
+		height: auto;
+		text-align: center;
+		overflow: hidden;
+		width: 100%;
+	}
+	#imagen2{
+		height: auto;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+	}
+	#imagenUno{
+	border: 1px;
+		box-shadow: 1px 1px 2px #82c3a6;
+		height: 90%;
+	}
+	#imagenUno:hover{
+		animation: rotacion 2s;
+	}
+	@-webkit-keyframes rotacion {
+		from{
+			transform: rotate(5deg);
+		}
+		to{
+			height: 300px;
+		}
+	}
+
+	#imagenDos{
+		border:1px;
+		box-shadow: 1px 1px 2px #82c3a6;
+	}
+
+	#imagenDos:hover{
+		animation: imagen2-animacion 2s;
+	}
+
+	@keyframes imagen2-animacion {
+		0% {
+			position: relative;
+			top: 5px;
+		}
+		50% {
+			position: relative;
+			left: 5px;
+		}
+		100% {
+			position: relative;
+			left: 0px;
+		}
+	}
+
+	footer{
+		background-color: #C6D5C5;
+		color: black;
+		width: 100%;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		display: flex;
+		flex-direction:column;
+	}
+	footer h3{
+		text-align: center;
+		margin: 0;
+		padding-left: 20px;
+	}
+	.contacto{
+		width: 100%;
+	}
+	.termino{
+		width: 100%;
+	}
+	.redes{
+		width: 100%;
+	}
+	.derecho{
+		width: 100%;
+	}
+
+
+}
